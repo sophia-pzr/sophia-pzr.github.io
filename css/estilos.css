@@ -1,0 +1,251 @@
+/*Page:todas*/
+
+body {
+  background: #f7f1e2;
+}
+
+
+header .cabecera {
+background-image: linear-gradient(#f7d9d0, #f7f1e2);
+margin-bottom: 10px;
+}
+
+nav{font-family: 'Montserrat';
+        font-size: 14px;font-weight: bold;}
+
+body{font-family: 'Montserrat';
+        font-size: 18px;}
+
+footer h1 {font-family: 'Montserrat';
+        font-size: 18px;color: white; }
+
+.logo {
+	margin: 20px;
+	float: left;}
+
+.cabecera__flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding: 20px;
+  font-size: 16px;}
+
+.cabecera__flex  a {
+  text-decoration: none;
+  padding: 30px;
+  color: #4c1e13;}
+
+.cabecera__flex a:hover {
+  background-color: #604b3a;
+  color: #f7f1e2;
+  padding: 30px;}
+
+footer {
+margin-top:5px;
+background-color: #381e09; 
+padding:18px;}
+
+.rsociales { 
+display: flex; 
+justify-content: flex-end;
+vertical-align: middle}
+
+.rsociales__boton img {
+	height: 30px;}
+
+.textoTransicion:hover {
+color: #00e599;
+transition: 4s;
+font-size: 25px;}
+
+
+
+/*Page:index*/
+
+.grilla{
+	display: grid;
+	border: 5px solid #442304;
+	margin-top: 20px;
+	grid-template-columns: minmax(auto, 70%) minmax(auto, 30%);
+	grid-template-rows: 500px 100px;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px ;}
+
+
+.grilla__contenido{
+	color:#132f27;
+	background-color: #b7e4d6}
+
+.grilla__nuevopost{
+	color:#382416;
+	background-color: #cca387;}
+
+.grilla__productos{
+	color:#132f27;
+	background-color: #68cfaa;}
+
+.grilla__comentarios{
+	color:#f7f1e2;
+	background-color: #933e03 ;}
+
+
+/*Page:nosotros*/
+
+.cuerpo__titulo{
+margin:20px;
+color: #933e03;
+font-family: 'Montserrat', serif;
+font-size: 25px;
+font-weight: bold;}
+
+.cuerpo__1{color: #f7f1e2;
+margin-bottom: 20px;
+background-color: #265e4d;
+padding: 40px;}
+
+.cuerpo__1 p {margin-top: 30px}
+
+.cuerpo__img1 {
+width: 180px;
+float: left;
+margin-right: 50px;}
+
+.cuerpo__2{color: #f7f1e2;
+margin-bottom: 20px;
+background-color: #265e4d;
+padding: 40px;}
+
+.cuerpo__2 p {margin-top: 30px}
+
+.cuerpo__img2 {
+width: 180px;
+float: right;
+margin-left: 50px;}
+
+div.reset {
+ clear: both;
+}
+
+/*Page:productos*/
+
+.productos {
+ display: flex;
+ flex-wrap: wrap;
+ list-style: none;}
+
+.productos__cartas {
+background-color: white;
+border-radius: 5px;
+box-shadow: 0 15px 20px -4px rgba(0,0,0,0.25);
+margin-left: 10px;
+margin-bottom: 20px;
+height: 275px;
+width: 300px}
+
+
+.producto__titulo {
+  color: gray;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px;}
+
+.producto__desc {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  font-size: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;}
+
+  .producto__precio {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 10px;}
+
+
+.btn {
+  background-color: gray;
+  border-color: white;
+  border: 1px solid;
+  //border-radius: 10px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+ font-size: 15px;}
+
+.producto__img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  //filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; // 16:9 aspect ratio
+  }
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; // 3:2 aspect ratio
+    }
+  }
+}
+
+ .productos__cartas {
+  display: flex;
+  padding: 1rem;}
+
+
+
+
+/*Page:comunidad*/
+
+.secciones__titulo {
+margin:20px;
+color: #933e03;
+font-family: 'Montserrat', serif;
+font-size: 25px;
+font-weight: bold;}
+
+.secciones__recetas{
+	color:#f7f1e2;
+	background-color: #265e4d;
+	padding: 50px;}
+
+.secciones__preguntas {
+	color:#f7f1e2;
+  background-color: #265e4d;
+	padding: 50px;}
+
+/*Page:contacto*/
+
+.formulario__titulo{
+margin-bottom: 20px;
+color: #933e03;
+font-family: 'Montserrat', serif;
+font-size: 25px;
+font-weight: bold;}
+
+.formulario{
+	max-width: 500px;
+	margin: auto; 
+	margin-top: 20px;}
+
+.formulario__grupo{
+	margin-bottom: 30px;}
+
+
+.miBoton { display: table;
+margin:20px auto;}
