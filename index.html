@@ -11,35 +11,52 @@
 
 <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
 
+<link rel="stylesheet" type="text/css" href="scss/prueba.css"/>
+
 <meta name="description" content="Este es el sitio web de La Panadería, tienda que se dedica a la venta de panes en la ciudad de Tacna, en el encontrarás productos, imágenes de nuestros panes, recetas, una comunidad activa y mucho más">
 <meta name="keywords"  content="PAN, DELICIOSO, SUAVES, CROCANTES, HORNEADO, HARINA, HUEVOS, RECETAS">
 
 </head>
 <body>
-	<header>
+ <header>
 
-	<img class="logo" width="180px" src="imagenes/logo.svg" alt="La Panadería" title="La Panadería">
-	
-	<nav class="cabecera">
+<nav class="navbar">
 
-		<div class="cabecera__flex">
+  <div class="navbar__logo">
+    <img class="logo" src="imagenes/logo.svg" alt="La Panadería" title="La Panadería">
+     </div>
 
-			<a class="cabecera__boton" href="index.html">Inicio</a>
-			
-			<a class="cabecera__boton" href="paginas/nosotros.html">Nosotros</a>
-				</li>
+  <ul class="navbar__list" id="navi__list">
+    <li class="list__item">
+      <a href="index.html">Inicio</a>
+    </li>
+              
+    <li class="list__item">
+      <a href="paginas/nosotros.html">Nosotros</a>
+    </li>
+    
+    <li class="list__item">
+      <a href="paginas/productos.html">Productos</a>
+    </li>
+      
+    <li class="list__item">
+      <a href="paginas/comunidad.html">Comunidad</a>
+    </li>
+      
+    <li class="list__item">
+      <a href="paginas/contacto.html">Contacto</a>
+    </li>
+  </ul>
 
-			<a class="cabecera__boton" href="paginas/productos.html">Productos</a>
-		
-				
-			<a class="cabecera__boton" href="paginas/comunidad.html">Comunidad</a>
-						
-				
-			<a class="cabecera__boton" href="paginas/contacto.html">Contacto</a>
-			
-		</div>
+    <div class="menu" id="toggle__button">
+      <div class="menu__line"></div>
+      <div class="menu__line"></div>
+      <div class="menu__line"></div>
+    </div>
 
-		</nav></header>
+  </nav>
+
+</header>
 
 
 <div id="carouselExampleIndicators" class="myCarousel carousel slide" data-bs-ride="carousel">
@@ -48,17 +65,21 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagenes/slide1.svg" class="d-block w-100" alt="slide1">
+  
+   	<div class="carousel-item active">
+     	 <img src="imagenes/slide1.svg" alt="el proceso" title="el proceso" class="d-block w-100">
+    </div>
+  
+    <div class="carousel-item">
+      <img src="imagenes/slide2.svg" alt="el taller" title="el taller" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="imagenes/slide2.svg" class="d-block w-100" alt="slide2">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/slide3.svg" class="d-block w-100" alt="slide3">
+      <img src="imagenes/slide3.svg" alt="panes horneados" title="panes horneados" class="d-block w-100">
     </div>
   </div>
+
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -69,49 +90,60 @@
   </button>
 </div>
 
-<section class="grilla">
-	<main class="grilla__contenido">
+
+<section class="grid">
+	<main class="grid__content">
 			<p>Aquí encontrarás un espacio de contenido sobre nosotros</p>
 		</main>
 
-	<div class="grilla__nuevopost">
+	<div class="grid__newpost">
 
 			<p>Aquí encontrarás un espacio de nuevos post</p>
 		</div>
 		
-	<div class="grilla__productos">
+	<div class="grid__products">
 			<p>Aquí encontrarás un espacio con los productos recientemente publicados</p>
 		</div>
 
-	<div class="grilla__comentarios">
+	<div class="grid__comments">
 			<p>Aquí encontrarás una sección con los comentarios de la comunidad</p>
 		</div>
 </section >
 
 
-<footer>
+<footer class="footer">
 		
-	<h1 class="textoTransicion">Que tengas un día pantástico... :)</h1>
+	<h1 class="footer__transition">Que tengas un día pantástico... :)</h1>
 	
 	<nav>
-		<div class="rsociales">
-			<a class="rsociales__boton" href="https://www.facebook.com/">
+		<div class="rrss">
+			<a class="rrss__button" href="https://www.facebook.com/">
 				<img src="imagenes/fb_icon.png" alt="facebook" title="facebook" hspace="10" vspace="10">
 					</a>
 			
 
-			<a class="rsociales__boton" href="https://www.instagram.com/">
+			<a class="rrss__button" href="https://www.instagram.com/">
 				<img src="imagenes/ig_icon.png" alt="instagram" title="instagram" hspace="10" vspace="10">
 				
 
-			<a class="rsociales__boton" href="https://web.whatsapp.com/">
+			<a class="rrss__button" href="https://web.whatsapp.com/">
 				<img src="imagenes/wp_icon.png" alt="whatsapp" title="whatsapp" hspace="10" vspace="10">
 
-			<a class="rsociales__boton" href="https://www.youtube.com/">
+			<a class="rrss__button" href="https://www.youtube.com/">
 				<img src="imagenes/yt_icon.png" alt="youtube" title="youtube" hspace="10" vspace="10">
 			
 	</div></nav></footer>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    
+    const toggleButton = document.getElementById('toggle__button')
+    const naviList = document.getElementById('navi__list')
+
+    toggleButton.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+    })
+  </script>
 </body>
 </html>
